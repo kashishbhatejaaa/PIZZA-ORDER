@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Pizza Order Form</title>
+
+    <link rel="icon" type="image/png" href="th.jpeg"> <!-- icon for the page -->
+</head>
+<body style="background-color: white; color: black;"> <!-- Setting background color and text color -->
+    <h1 align="center"><u>PIZZA HUT</u></h1> <!-- Heading for the page -->
+    <table align="center">
+        <tr>
+            <td valign="bottom"><img src="pizzaslices.jpg" width="250" height="250"></td> <!-- Image of pizzas -->
+        </tr>
+    </table>
+
+  
+
+    <div style="width:80%; margin:auto;">
+        <form method="post" name="forms" action="index.html" style="width:70%;"> <!-- Form starts here -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name:</label> <!-- Text input for first name -->
+                <input type="text" name="fname" size="20">
+                <label>Last Name:</label> <!-- Text input for last name -->
+                <input type="text" name="lname" size="20">
+                <label>Mobile:</label> <!-- Text input for mobile number -->
+                 <input type="text" name="mobile" size="20">
+                <label>Address:</label> <!-- Textarea for address -->
+                <textarea cols="70" rows="1" name="address"></textarea>
+            </fieldset>
+              
+            <fieldset>
+                <legend>Order Details</legend>
+                <select name="size">
+                    <option>Select Pizza Size</option>
+                    <option value="1">Small</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Large</option>
+                    <option value="4">Family</option>
+                </select>
+                <select name="Quantity">
+                    <option>Select Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>Delivery Date:</label> <input type="date" name="date">
+                <label>Delivery Time:</label> <input type="time" name="time">
+            </fieldset>
+        
+            <fieldset>
+                <legend>Toppings</legend>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" id="olives" name="toppings" value="olives">
+                <label for="olives">Olives</label>
+                <input type="checkbox" id="extra-cheese" name="toppings" value="extra cheese">
+                <label for="extra-cheese">Extra Cheese</label>
+                <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                <label for="sausage">Sausage</label>
+                <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+                <label for="pineapple">Pineapple</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Type of Crust</legend>
+                <input type="radio" id="thin-crust" name="type-of-crust" value="thin-crust">
+                <label for="thin-crust">Thin-crust</label>
+                <input type="radio" id="thick-crust" name="type-of-crust" value="thick-crust">
+                <label for="thick-crust">Thick-crust</label>
+                <input type="radio" id="double-dough" name="type-of-crust" value="double-dough">
+                <label for="double-dough">Double-Dough</label>
+                <input type="radio" id="deep-dish" name="type-of-crust" value="deep-dish" required>
+                <label for="deep-dish">Deep Dish</label>
+                <input type="radio" id="stuffed-crust" name="type-of-crust" value="stuffed-crust">
+                <label for="stuffed-crust">Stuffed Crust</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Order Options</legend>
+                <label>Service:</label>
+                <input type="radio" id="take-out" name="service" value="take-out" required>
+                <label for="take-out">Take-Out</label>
+                <input type="radio" id="delivery" name="service" value="delivery">
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="fast-delivery" name="service" value="fast delivery">
+                <label for="fast-delivery">Fast Delivery (+4$)</label>
+                <input type="radio" id="eat-in" name="service" value="eat-in">
+                <label for="eat-in">Eat-In</label>
+            </fieldset>
+        
+            <fieldset>
+                <select name="payment">
+                    <option>Select Payment Option</option>
+                    <option value="1">Bank Transfer</option>
+                    <option value="2">Cash on Delivery</option>
+                    <option value="3">Debit or Credit Card</option>
+                </select>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <textarea id="instructions" name="instructions" rows="5" cols="45" placeholder="Order related Instructions..."></textarea>
+            </fieldset>
+            <!-- Additional fieldsets for order details, toppings, crust type, order options, payment, and special instructions -->
+
+            <input type="submit" value="Place Your Order"> <!-- Submit button -->
+            <input type="reset" value="Start Over"><!-- Reset button -->
+        </form>
+    </div>
+
+    <footer>
+        <p>Enjoy The Yummy-Yummy PiZZa</p> <!-- Footer text -->
+        <p>Contact us: +1(647)567-0129</p> <!-- Contact information -->
+    </footer>
+</body>
+</html>
